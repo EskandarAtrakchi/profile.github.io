@@ -1,0 +1,239 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+  }
+
+  .dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .headerName {
+    text-align: center;
+  }
+  section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+
+  .profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .profile-title {
+    font-size: 18px;
+    margin-top: 5px;
+    color: #777;
+  }
+
+  .profile-contact {
+    margin-top: 20px;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .contact-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  #piechart{
+    position: fixed;
+    float: left;
+  }
+
+  .contact-form {
+    transform: translateY(-20%);
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  @media (max-width: 600px) {
+    .contact-form  {
+        transform: translateY(-35%);
+    }
+  }
+
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+
+  .open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  .contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+
+  .btn-content {
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+   }
+   
+   .btn-content::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   .btn-content:hover::before {
+    width: 9em;
+   }
+
+   .input {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+  }
+  
+  .input:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;
+  }
+
+  .LinkedInbutton {
+    width: 10em;
+    height: 3em;
+    border-radius: 8px;
+    border: 0.15em solid rgb(162, 63, 255);
+    color: rgb(162, 63, 255);
+    background-color: #00000000;
+    transition: all 0.5s ease;
+  }
+  
+  .LinkedInbutton .text {
+    display: none
+  }
+  
+  .LinkedInbutton:hover>.text {
+    display: block;
+  }
+  
+  .LinkedInbutton:hover>svg {
+    display: none;
+  }
+  
+  .LinkedInbutton:hover {
+    background-color: rgb(162, 63, 255);
+    color: #fff
+  }
+  
+  .LinkedInbutton svg {
+    width: 1.5em;
+    margin-top: 3px;
+  }
+
+  @media (max-width: 1400px) {
+    .chart-container {
+      display: none;
+    }
+  }
+
+  @media (max-width: 499px) {
+    .imgup-container {
+      display: none;
+    }
+  }
+
+  .imgup {
+    width:3%; 
+    height:3%;
+    padding-left: 3%;
+  }
+  
