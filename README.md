@@ -21,5 +21,5 @@ Responsive design, making it compatible with different devices.
 
 Feel free to reach out to me through [GitHub] for any suggestions, questions, or inquiries.
 
-
+## If you want to deploy your page on GitHub I suggest you to visit https://pages.github.com/
 Happy CV building! 🚀
