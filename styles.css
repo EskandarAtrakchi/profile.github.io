@@ -77,8 +77,6 @@ body {
     text-align: left;
     padding: 8px;
   }
-  
-  tr:nth-child(even){background-color: #ffffff}
   #piechart{
     position: fixed;
     float: left;
